@@ -1,0 +1,4 @@
+.env
+workshop.db
+__pycache__/
+*.pyc
