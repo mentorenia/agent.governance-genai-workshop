@@ -38,11 +38,11 @@ echo "ANTHROPIC_API_KEY=your-key-here" > .env
 # Initialize the database and start the dashboard
 python database.py reset
 python dashboard.py
-# Open http://localhost:5050 in your brNAMEowser
+# Open http://localhost:5050 in your browser
 
 # In a second terminal — run the unsafe agent
 python agent_unsafe.py
-# Watch the dashboard: $4,299.99 refund executed with no approval
+# Watch the dashboard: 
 
 # Reset and run the protected agent
 python database.py reset
@@ -194,8 +194,16 @@ The only code you'd change to switch models is the SDK client. The architecture 
 
 Built by [David Garrido](https://www.linkedin.com/in/david-mentor-ia/) for the GenAI Summit EU 2026 workshop.
 
-87 applications. 40 seats. This repo is for everyone who wanted to be in the room.
+There were 87 applications to this workshop but only 40 seats available. 
+This repo is for everyone who wanted to be in the room.
 
+## Would you like to schedule a call?
+https://calendly.com/david_garrido_leal/cafe-virtual
+
+## Would you like to stay in touch?
+
+[Here's my Newsletter](https://mama-papa-e-ia.beehiiv.com/)
+[Here's my LinkedIn](https://www.linkedin.com/in/david-mentor-ia/)
 The three questions are universal. The answers start here.
 
 ---
