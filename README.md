@@ -204,6 +204,8 @@ https://calendly.com/david_garrido_leal/cafe-virtual
 
 [Here's my Newsletter](https://mama-papa-e-ia.beehiiv.com/)
 [Here's my LinkedIn](https://www.linkedin.com/in/david-mentor-ia/)
+
+
 The three questions are universal. The answers start here.
 
 ---
