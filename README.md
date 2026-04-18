@@ -26,7 +26,7 @@ This repository contains the three governance layers that answer those questions
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/agent-governance-workshop.git
+git clone https://github.com/mentorenia/agent-governance-workshop.git
 cd agent-governance-workshop
 
 # Install dependencies
