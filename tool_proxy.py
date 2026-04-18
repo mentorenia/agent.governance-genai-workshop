@@ -194,3 +194,35 @@ class ToolProxy:
                 })
 
         return json.dumps({"error": f"Unknown write tool: {tool_name}"})
+
+
+# ============================================================
+# STANDALONE DEMO
+# ============================================================
+
+if __name__ == "__main__":
+    from database import db_init, db_seed
+
+    db_init()
+    db_seed()
+
+    proxy = ToolProxy(agent_type="demo", auto_approve=False)
+
+    print("\n" + "=" * 60)
+    print("  TOOL PROXY DEMO — Three scenarios")
+    print("=" * 60)
+
+    print("\n--- 1. READ (auto-executed) ---\n")
+    proxy.execute("get_ticket", {"ticket_id": "TK-1001"})
+
+    print("\n--- 2. BLOCKED (not in catalog) ---\n")
+    proxy.execute("drop_table", {"table": "tickets"})
+
+    print("\n--- 3. WRITE (you decide) ---\n")
+    proxy.execute("propose_refund", {
+        "ticket_id": "TK-1001",
+        "amount": 4299.99,
+        "reason": "Medical-grade sensors damaged in transit"
+    })
+
+    print("\n  Done. Check the dashboard")
