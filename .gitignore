@@ -2,3 +2,5 @@
 workshop.db
 __pycache__/
 *.pyc
+AUDIT_REPORT.md
+AUDIT_*.md

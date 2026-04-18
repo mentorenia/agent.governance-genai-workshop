@@ -26,7 +26,7 @@ This repository contains the three governance layers that answer those questions
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USER/agent-governance-workshop.git
+git clone https://github.com/YOUR_USERNAME/agent-governance-workshop.git
 cd agent-governance-workshop
 
 # Install dependencies
@@ -87,6 +87,13 @@ python agent_protected.py
 | File | What it covers |
 |------|---------------|
 | `CONNECT_MCP.md` | Step-by-step guide to connect the agent to the real MCP server over stdio using the official `mcp` Python SDK. Includes production MCP server recommendations by gate, enterprise security guidance, and why you should build your own MCP servers for internal tools. |
+
+### Tools
+
+| File | What it does |
+|------|-------------|
+| `export_audit.py` | Exports the audit trail to terminal or to `AUDIT_REPORT.md`. Run after any demo to see every action, approval, and rejection in a readable format. Usage: `python export_audit.py --save` |
+| `auditor.py` | AI-powered governance auditor. Feed it any agent file and it analyzes it against the Three Gates framework, scores it, and recommends fixes. Usage: `python auditor.py agent_unsafe.py` or `python auditor.py agent_unsafe.py agent_protected.py` for a side-by-side comparison. |
 
 ---
 
@@ -192,7 +199,7 @@ The only code you'd change to switch models is the SDK client. The architecture 
 
 ## About
 
-Built by [David Garrido](https://www.linkedin.com/in/david-mentor-ia/) for the GenAI Summit EU 2026 workshop.
+Built by [David Garrido](https://www.linkedin.com/in/YOUR_LINKEDIN/) for the GenAI Summit EU 2026 workshop.
 
 There were 87 applications to this workshop but only 40 seats available. 
 This repo is for everyone who wanted to be in the room.
